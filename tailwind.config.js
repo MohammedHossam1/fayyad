@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const { fontFamily } = require('tailwindcss/defaultTheme');
 module.exports = {
     darkMode: ["class"],
     content: [
@@ -32,6 +34,9 @@ module.exports = {
     			'2xl': '1536px',
     			'3xl': '1920px'
     		},
+			fontFamily: {
+				poppins: ['var(--font-poppins)', ...fontFamily.sans],
+			  },
     		colors: {
     			main: '#1f1e28',
     			mainLight: '#20202a',
